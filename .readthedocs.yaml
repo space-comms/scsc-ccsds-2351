@@ -1,7 +1,7 @@
 version: 2
 
 sphinx:
-  configuration: docs/conf.py  # required key, but we don't rely on Sphinx
+  configuration: docs/conf.py  # stub, as before
 
 build:
   os: ubuntu-22.04
@@ -11,4 +11,4 @@ build:
   commands:
     - cargo install mdbook
     - rustup component add rustfmt
-    - mdbook build book --dest-dir $READTHEDOCS_OUTPUT/html
+    - mdbook build book --dest-dir $READTHEDOCS_OUTPUT
